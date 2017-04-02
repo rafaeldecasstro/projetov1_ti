@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="autor" content="Francisco Rafael Carneiro de Castro - 1210792">
+
+        <title>Body ink tattoo</title>
+
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body>
+        <header class="layout-cabecalho  layout-cabecalho--home">
+            <div class="container">
+                <nav class="navegacao">
+                    <div class="navegacao__menu">
+                        <button class="botao-chaveador  js-botao-chaveador"></button>
+
+                        <ul class="menu  js-menu  animated  slideInLeft">
+                            <li class="menu__item">
+                                <a href="index.html">Páginal inicial</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="layout-enquete">
+             <div class="container">
+                <form action="#" method="get" class="enquete">
+                    <div class="enquete_logo">
+                        <img src="imagens/logo_black.png" width="300" alt="Body ink tattoo">
+                    </div>
+                    <table class="enquete__tabela">
+                        <tbody class="enquete__tabela--corpo">
+                            <tr class="enquete__tabela--linha">
+                                <td class="enquete__tabela--coluna1">
+                                    <p>1) Qual tatuagem você faria?</p>
+                                </td>
+                                <td class="enquete__tabela--coluna2">
+                                    <input type="checkbox" class="enquete__check" name="questao1" value="0"> Dragão
+                                    <input type="checkbox" class="enquete__check" name="questao1" value="1"> Rosas
+                                    <input type="checkbox" class="enquete__check" name="questao1" value="2"> Tribal
+                                    <input type="checkbox" class="enquete__check" name="questao1" value="3"> Médica
+                                    <input type="checkbox" class="enquete__check" name="questao1" value="4"> Outra
+                                </td>
+                            </tr>
+
+                            <tr class="enquete__tabela--linha">
+                                <td class="enquete__tabela--coluna1">
+                                    <p>2) Em qual local do corpo você faria uma tatuagem?</p>
+                                </td>
+                                <td class="enquete__tabela--coluna2">
+                                    <input type="checkbox" class="enquete__check" name="questao2" value="0"> Braço
+                                    <input type="checkbox" class="enquete__check" name="questao2" value="1"> Peito
+                                    <input type="checkbox" class="enquete__check" name="questao2" value="2"> Perna
+                                    <input type="checkbox" class="enquete__check" name="questao2" value="3"> Costas
+                                    <input type="checkbox" class="enquete__check" name="questao2" value="4"> Outro
+                                </td>
+                            </tr>
+
+                            <tr class="enquete__tabela--linha">
+                                <td class="enquete__tabela--coluna1">
+                                    <p>3) Você faria mais de uma tatuagem?</p>
+                                </td>
+                                <td class="enquete__tabela--coluna2">
+                                    <input type="radio" class="enquete__check" name="questao3" value="true"> Sim
+                                    <input type="radio" class="enquete__check" name="questao3" value="false"> Não
+                                </td>
+                            </tr>
+
+                            <tr class="enquete__tabela--linha">
+                                <td class="enquete__tabela--coluna1">
+                                    <p>4) Qual dos estilos de tatuagem você prefere?</p>
+                                </td>
+                                <td class="enquete__tabela--coluna2">
+                                    <input type="radio" class="enquete__check" name="questao3" value="color"> Colorida
+                                    <input type="radio" class="enquete__check" name="questao3" value="bg"> Preto e cinza
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="enquete__enviar">
+                        <input class="botao botao--medio" type="submit" value="Enviar" />
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <footer class="layout-rodape">
+            <div class="container">
+                <p>&copy; Body ink tattoo. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <script src="javascripts/app.js"></script>
+
+    </body>
+</html>

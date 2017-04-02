@@ -1,0 +1,316 @@
+
+/*--------------------*\
+  BOTAO
+\*--------------------*/
+.botao {
+	display: inline-block;
+	padding: 0.85em 1.2em;
+
+	background-color: #bbb;
+	color: #fff;
+	border: none;
+
+	line-height: normal;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.botao:hover, .botao:focus {
+	background-color: #aaa;
+	color: #fff;
+
+	text-decoration: none;
+}
+
+.botao--medio {
+	width: 50%;
+}
+
+
+
+/*--------------------*\
+  CHAMADA
+\*--------------------*/
+.chamada {
+	font-size: 1.6rem; /* 1.6 * 10px = 16px */
+	text-align: center;
+}
+
+.chamada_logo {
+	margin-bottom: 30px;
+}
+
+.chamada__titulo {
+	margin: 0;
+
+	color: #fff;
+
+	font-size: 3.375em; /* 54px / 16px = 3.375 */
+	line-height: 0.9;
+	text-shadow: 1px 1px #313131;
+}
+
+.chamada__paragrafo {
+	background-color: #484848;
+	margin: 30px 0;
+	padding: 20px;
+
+	color: #fff;
+	font-size: 1em;
+
+	border-radius: 50px;
+}
+
+@media(min-width: 992px) {
+	.chamada {
+		padding-left: 10%;
+		padding-right: 10%;
+
+		font-size: 2.2rem; /* 2.2 * 10px = 22px */
+	}
+}
+
+
+
+
+/*--------------------*\
+  DEPOIMENTO
+\*--------------------*/
+.depoimento {
+	font-size: 2.2rem; /* 22px */
+}
+
+@media(min-width: 992px) {
+	.depoimento {
+		padding-left: 15%;
+		padding-right: 15%;
+
+		font-size: 2.8rem;
+	}
+}
+
+.depoimento > blockquote {
+	position: relative;
+	margin: 0;
+	padding: 0 60px;
+
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.depoimento > blockquote::before {
+	position: absolute;
+	left: 0;
+	top: -0.35em;
+
+	color: #ccc;
+
+	font-size: 8em; /* 176px */
+
+	content: "\201c"; /* notação Unicode*/
+}
+
+.depoimento__autor {
+	margin-top: 40px;
+
+	text-align: center;
+	font-size: 0.7272em
+}
+
+.depoimento__autor > img {
+	border-radius: 50%;
+}
+
+.depoimento__autor > p {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+/*--------------------*\
+  DEPOIMENTO
+\*--------------------*/
+
+.enquete {
+	text-align: center;
+}
+
+.enquete__tabela {
+	margin: 20px 0 40px 0;
+	width: 100%;
+}
+
+.enquete__tabela--coluna1 {
+	width: 60%;
+	text-align: center;
+
+}
+
+.enquete__tabela--coluna2 {
+	text-align: left;
+	width: 40%;
+}
+
+.enquete__check {
+	margin-left: 15px;
+}
+
+.enquete__enviar {
+	width: 100%;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.enquete__tabela--linha:nth-child(even) {
+    background: #ECECEC;
+}
+
+.enquete__tabela--linha:nth-child(odd) {
+    background: #D9D9D9;
+}
+
+
+/*--------------------*\
+  NAVEGAÇÃO
+\*--------------------*/
+.navegacao__menu {
+	float: right;
+}
+
+
+/*--------------------*\
+  SIGNIFICADOS
+\*--------------------*/
+.significados {
+	font-size: 1.6rem; /* 1.6 * 10px = 16px */
+	text-align: center;
+}
+
+.significado {
+	border: 5px solid;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	height: 520px;
+}
+
+.significado__dragao {
+	border-color: #00921B;
+	color: #00921B;
+	background-color: #A5FFB8;
+}
+
+.significado__rosa {
+	border-color: #A10000;
+	color: #A10000;
+	background-color: #FC9F9F;
+}
+
+.significado__tribal {
+	border-color: #4F4F4F;
+	color: #4F4F4F;
+	background-color: #CBCACA;
+}
+
+.significado__medica {
+	border-color: #0688B8;
+	color: #0688B8;
+	background-color: #ADE2F5;
+}
+
+.significado__imagem {
+	border-radius: 5%;
+}
+
+.significado__titulo {
+	font-size: 3.0rem;
+}
+
+.significado__paragrafo {
+	font-size: 1.6rem;
+}
+
+@media(min-width: 992px) {
+	.significados {
+		padding-left: 10%;
+		padding-right: 10%;
+
+		font-size: 2.2rem; /* 2.2 * 10px = 22px */
+	}
+}
+
+
+/*--------------------*\
+  BOTÃO CHAVEADOR
+\*--------------------*/
+.botao-chaveador {
+	width: 24px;
+	height: 24px;
+	border: 0;
+
+	background: none;
+	background-image: url("../imagens/bars.png");
+
+	outline: none;
+}
+
+@media(min-width: 992px) {
+	.botao-chaveador {
+		display: none;
+	}
+}
+
+
+/*--------------------*\
+  MENU
+\*--------------------*/
+.menu {
+	margin: 0;
+
+	font-size: 1.4rem;
+
+	list-style: none;
+}
+
+@media(max-width: 991px) {
+
+	.menu {
+		position: fixed;
+		top:  0;
+		left: 0;
+		bottom: 0;
+
+		display: none;
+		width: 200px;
+		padding: 20px;
+		border-right: 1px solid #eee;
+
+		background-color: #fbfbfb;
+
+	}
+
+	.menu--exibindo {
+		display: block;
+	}
+
+	.menu__item {
+		display: block;
+
+		line-height: 3;
+	}
+
+	.menu__item--botao {
+		margin-top: 20px;
+	}
+}
+
+@media(min-width: 992px) {
+
+	.menu__item {
+		display: inline-block;
+		padding-right: 20px;
+	}
+
+	.menu__item:last-of-type {
+		padding-right: 0;
+	}
+}
